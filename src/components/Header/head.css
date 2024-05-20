@@ -1,0 +1,110 @@
+/* head.css */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   background-color: lightgoldenrodyellow;
+}
+
+.element {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#order{
+    display: flex;
+    padding: 10px;
+}
+
+.unorder {
+    list-style-type: none;
+    padding: 0;
+}
+
+ .list {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.gradient-icon {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.face{
+    color: blue;
+    font-size: 25px;
+}
+
+.you{
+    color: red;
+    font-size: 25px;
+}
+
+.insta{
+    color: rgb(244, 80, 107);
+    font-size: 25px;
+}
+
+.google{
+
+    font-size: 25px;
+}
+
+.whatsapp{
+    color: rgb(72, 209, 72);
+    font-size: 25px;
+    font-size: 25px;
+}
+.twit{
+    color: rgb(44, 44, 194);
+    font-size: 25px;
+}
+
+.twitter{
+    color: rgb(29, 161, 242);
+    font-size: 25px;
+}
+
+.linkedin{
+    color: rgb(0, 119, 181);
+    font-size: 25px;
+}
+
+.github{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+#fa-brands {
+    font-size: 3rem;
+    background-image: linear-gradient(to bottom right, yellow, limegreen, crimson, blue, blue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255)
+  }
+
+  .refContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
