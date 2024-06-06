@@ -29,7 +29,6 @@ const App = () => {
         phone: ''
       });
       alert("User Register Successfully");
-      
       console.log(response);
         
     } catch (error) {
