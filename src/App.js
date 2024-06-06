@@ -9,28 +9,38 @@ const App = () => {
     email: '',
     phone: ''
   });
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInput((prevInput) => ({
       ...prevInput,
       [name]: value
     }));
+    
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/user', input);
-      console.log(response.data);
+      const response = await axios.post('http://localhost:4000/user', input);
+      setInput({
+        name: '',
+        password: '',
+        email: '',
+        phone: ''
+      });
+      alert("User Register Successfully");
+      
+      console.log(response);
+        
     } catch (error) {
       console.error('There was an error!', error);
     }
-  };
+   
+  };  
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
-      <form onSubmit={handleSubmit}>
+    <div style={{ display: 'flex', flexDirection: 'column',justifyContent:'center',alignItems:'center' }}>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column',justifyContent:'center',alignItems:'flex-start' }}>
         <h1>User Register</h1>
         <label>Username</label>
         <input
